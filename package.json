@@ -5,9 +5,6 @@
   "author": "",
   "private": true,
   "license": "UNLICENSED",
-  "engines": {
-    "node": "16.13.0"
-  },
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
@@ -70,5 +67,6 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
-  }
+  },
+  "packageManager": "yarn@3.1.1"
 }
