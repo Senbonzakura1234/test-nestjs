@@ -16,10 +16,10 @@ describe('AppController', () => {
     });
 
     describe('root', () => {
-        it('should return void', () => {
+        it("'getHello' should return void", () => {
             expect(appController.getHello()).toBe('Hello');
         });
-        it('should return DTO', () => {
+        it("'postHello' should return AppDto", () => {
             const appDto: AppDto = { content: 'Hello World!' };
             expect(appController.postHello(appDto)).toBe(appDto);
         });

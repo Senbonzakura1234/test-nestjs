@@ -1,10 +1,10 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, forwardRef, Get, Inject, Post } from '@nestjs/common';
 import { AppDto } from './app.dto';
 import { AppService } from './app.service';
 
 @Controller()
 export class AppController {
-    constructor(private readonly appService: AppService) {}
+    constructor(@Inject(forwardRef(() => AppService)) private appService: AppService) {}
 
     @Get()
     getHello(): string {

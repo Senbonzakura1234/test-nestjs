@@ -10,17 +10,15 @@
     },
     "editor.formatOnSave": true,
     "editor.tabSize": 4,
-    "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+    "eslint.validate": ["javascript", "typescript"],
     "eslint.alwaysShowStatus": true,
     "eslint.format.enable": true,
     "eslint.lintTask.enable": true,
     "eslint.packageManager": "yarn",
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
+    "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
     "rest-client.environmentVariables": {
         "$shared": {
-            "dev-host": "http://localhost:3000",
+            "dev-host": "http://localhost:5000",
             "prod-host": "https://test-nestjs-prod.herokuapp.com"
         }
     },
