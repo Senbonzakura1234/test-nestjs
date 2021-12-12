@@ -22,6 +22,6 @@ describe('AppController (e2e)', () => {
 
     it('/ (POST)', () => {
         const appDto: AppDto = { content: 'Hello World!' };
-        return request(app.getHttpServer()).post('/').send(appDto).expect(200).expect(appDto);
+        return request(app.getHttpServer()).post('/').send(appDto).expect(201).expect(appDto);
     });
 });
