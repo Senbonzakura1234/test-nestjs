@@ -1,6 +1,14 @@
 
-### Production
-GET {{prod-host}}
+### "Get Hello" Production
+GET {{prod-host}} 
+
+### "Get Hello" Development
+GET {{dev-host}} 
+
+
+
+### "Post Hello" Production
+POST {{prod-host}}
 Content-Type: application/json
 
 {
@@ -8,8 +16,8 @@ Content-Type: application/json
     "notAllowProp": 1931
 }
 
-### Development
-GET {{dev-host}}
+### "Post Hello" Development
+POST {{dev-host}}
 Content-Type: application/json
 
 {

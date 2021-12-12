@@ -1,29 +1,28 @@
 {
-  "rest-client.environmentVariables": {
-    "$shared": {
-        "dev-host": "http://localhost:3000",
-        "prod-host": "https://test-nestjs-prod.herokuapp.com"
-    }
-  },
-  "editor.rulers": [100],
-  "files.exclude": {
-      "**/.git": true,
-      "**/build": true,
-      "**/.eslintcache": true,
-      "**/node_modules": true,
-      "**/.yarn": true
-  },
-  "editor.formatOnSave": true,
-  "editor.tabSize": 4,
-  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
-  "eslint.alwaysShowStatus": true,
-  "eslint.format.enable": true,
-  "eslint.lintTask.enable": true,
-  "eslint.packageManager": "yarn",
-  "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-  },
-  "typescript.tsdk": "node_modules\\typescript\\lib"
-
-
+    "editor.rulers": [100],
+    "files.exclude": {
+        "**/.git": true,
+        "**/build": true,
+        "**/.eslintcache": true,
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/.yarn": true
+    },
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "eslint.lintTask.enable": true,
+    "eslint.packageManager": "yarn",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "rest-client.environmentVariables": {
+        "$shared": {
+            "dev-host": "http://localhost:3000",
+            "prod-host": "https://test-nestjs-prod.herokuapp.com"
+        }
+    },
+    "typescript.tsdk": "node_modules\\typescript\\lib"
 }
