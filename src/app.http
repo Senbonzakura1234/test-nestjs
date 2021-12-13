@@ -1,16 +1,15 @@
 
 ### "Get Hello" Production
-GET {{prod-host}} 
+GET {{prod-host}}
 
 ### "Get Hello" Development
-GET {{dev-host}} 
+GET {{dev-host}}
 
 
 
 ### "Post Hello" Production
 POST {{prod-host}}
 Content-Type: application/json
-
 {
     "content": "Hello World",
     "notAllowProp": 1931
@@ -19,7 +18,6 @@ Content-Type: application/json
 ### "Post Hello" Development
 POST {{dev-host}}
 Content-Type: application/json
-
 {
     "content": "Hello World",
     "notAllowProp": 1931
